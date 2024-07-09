@@ -1,0 +1,390 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 250;
+    background-color: rgb(255, 242, 242);
+}
+
+@media (width <= 425px) {
+    body {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 250;
+        background-color: rgb(255, 242, 242);
+        margin: 0.2rem;
+        font-size: small;
+    }
+}
+
+#p {
+    max-width: 180px;
+    border-radius: 50%;
+    border: 1px    
+}
+
+.titre {
+    display: inline-block;
+    flex-direction: column;
+    padding-right: 10%;
+    color: rgb(153,98,122);
+}
+
+.photo {
+    display: inline-block;
+    justify-content: right;
+}
+
+@media (width <= 425px) {
+    #p {
+        display: inline-block;
+        justify-content: left;
+        max-width: 100px;
+    }
+    .titre {
+        display: inline-block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    h1 {
+        font-family: "DM Sans", sans-serif;
+        color: rgb(100,56,67);
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-family: "DM Sans", sans-serif;
+        color: rgb(153,98,122);
+        font-weight: 750;
+        font-size: 17px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    color: rgb(100,56,67);
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    color: rgb(153,98,122);
+}
+
+.menubutt {
+    background-color: rgb(153,98,122);
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    padding: 12px 16px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 11px;
+    transition-duration: 0.4s;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-image: url(image/menubackgrd.png);
+    flex-wrap: wrap;
+    align-content: space-around;
+    row-gap: 20px;
+    column-gap: 8px;
+}
+
+.menubutt:hover {
+    background-color: rgb(195,145,167);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.20), 0 6px 20px rgba(0,0,0,0.20)
+}
+
+@media (width <= 425px) {
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        margin: 0.2rem;
+        background-image: url(image/menubackgrd.png);
+        flex-wrap: wrap;
+        align-content: space-around;
+        row-gap: 10px;
+        column-gap: 4px;
+    }
+
+    .menubutt {
+        background-color: rgb(153,98,122);
+        border: none;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        font-size: 80%;
+        display: inline-block;
+        padding: 6px 8px;
+        font-family: "DM Sans", sans-serif;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+    }
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    border: 0;
+}
+
+.plants img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+    background-image: url(image/menubackgrd.png);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.containervideo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.textvideo {
+    padding-right: 1.5rem;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+.containerprompt {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.containerprompt h4 {
+    font-size: 20px;
+}
+
+.containerprompt img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.lethal, .stardew, .fallout {
+    display: flex;
+    align-items: center;
+    align-content: start;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-self: flex-start;
+
+    width: 500px;
+    height: fit-content;
+    padding: 0.8rem;
+    margin: 1.5rem;
+
+    font-size: 14px;
+}
+
+.lethal {
+    container-name: lethal;
+    container-type: inline-size;
+}
+
+.stardew {
+    container-name: stardew;
+    container-type: inline-size;
+}
+
+.fallout {
+    container-name: fallout;
+    container-type: inline-size;
+}
+
+.lethal:hover {
+    background-color: rgb(224, 204, 213);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+    font-size: 16px;
+    transition: 0.3s ease-out;
+}
+
+.lethal:hover img {
+    max-width: 150px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+@container lethal (width<250px) {    
+    .lethal p {
+      font-size: 10px;
+    }
+
+    .lethal h4 {
+        font-size: 15px;
+    }
+
+    .lethal img {
+        width: 75px;
+    }
+
+    .lethal:hover {
+        background-color: rgb(224, 204, 213);
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+        font-size: 12px;
+        transition: 0.3s ease-out;
+    }
+
+    .lethal:hover img {
+        max-width: 90px;
+        border-radius: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+.stardew:hover {
+    background-color: rgb(224, 204, 213);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+    font-size: 16px;
+    transition: 0.3s ease-out;
+}
+
+.stardew:hover img {
+    max-width: 150px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+@container stardew (width<250px) {    
+    .stardew p {
+      font-size: 10px;
+    }
+
+    .stardew h4 {
+        font-size: 15px;
+    }
+
+    .stardew img {
+        width: 75px;
+    }
+
+    .stardew:hover {
+        background-color: rgb(224, 204, 213);
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+        font-size: 12px;
+        transition: 0.3s ease-out;
+    }
+
+    .stardew:hover img {
+        max-width: 90px;
+        border-radius: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+.fallout:hover {
+    background-color: rgb(224, 204, 213);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+    font-size: 16px;
+    transition: 0.3s ease-out;
+}
+
+.fallout:hover img {
+    max-width: 150px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+@container fallout (width<250px) {    
+    .fallout p {
+      font-size: 10px;
+    }
+
+    .fallout h4 {
+        font-size: 15px;
+    }
+
+    .fallout img {
+        width: 75px;
+    }
+
+    .fallout:hover {
+        background-color: rgb(224, 204, 213);
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px rgb(173, 172, 169);
+        font-size: 12px;
+        transition: 0.3s ease-out;
+    }
+
+    .fallout:hover img {
+        max-width: 90px;
+        border-radius: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+
+@media (width <= 425px) {
+    .containerprompt {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        column-gap: 2rem;
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (width <= 425px) {
+    
+    footer {
+        background-image: url(image/menubackgrd.png);
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .socials img {
+        max-width: 30px;
+    }
+
+    .padding {
+        padding: 0.5rem;
+    }
+
+    iframe {
+        width: 320px;
+        height: auto;
+        border: 0;
+    }
+
+    .plants img {
+        width: 100px;
+        height: auto;
+    }
+    
+}
+
